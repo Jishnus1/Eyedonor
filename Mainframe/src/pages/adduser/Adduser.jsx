@@ -43,7 +43,7 @@ const handleSubmit = (e) => {
 
   axios
     .post(
-      'http://localhost:5000/api/register',
+      '/api/register',
       formData
     )
     .then((response) => {

@@ -1,11 +1,11 @@
 import axios from "axios";
 import { Redirect } from "react-router-dom";
-// axios.defaults('http://localhost:5000/')
+// axios.defaults('/')
 export const loginCall = async (userCredential, dispatch) => {
   console.log('hgdhfdsj');
   dispatch({ type: "LOGIN_START" });
   try {
-    const res = await axios.post("http://localhost:5000/api/login", userCredential);
+    const res = await axios.post("/api/login", userCredential);
     console.log("-------------->"+JSON.stringify(res)+res.data.status)
     if(res.status==200){
       console.log("My data"+res.data)
