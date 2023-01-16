@@ -5,7 +5,7 @@ const authRoutes = require("./routes/authRoutes");
 const cookieParser = require("cookie-parser");
 const path =require('path')
 const app = express();
-app.listen(5000, (err) => {
+app.listen(5000 , (err) => {
   if (err) {
     console.log(err);
   } else {
