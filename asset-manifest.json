@@ -1,14 +1,12 @@
 {
   "files": {
-    "main.css": "/Eyedonor/static/css/main.e54a577c.css",
-    "main.js": "/Eyedonor/static/js/main.7d30f43d.js",
+    "main.css": "/Eyedonor/static/css/main.bd850ee3.css",
+    "main.js": "/Eyedonor/static/js/main.2d7012e0.js",
     "static/media/logo.svg": "/Eyedonor/static/media/logo.d5eb31fc6788987cf55352120d2e4835.svg",
-    "index.html": "/Eyedonor/index.html",
-    "main.e54a577c.css.map": "/Eyedonor/static/css/main.e54a577c.css.map",
-    "main.7d30f43d.js.map": "/Eyedonor/static/js/main.7d30f43d.js.map"
+    "index.html": "/Eyedonor/index.html"
   },
   "entrypoints": [
-    "static/css/main.e54a577c.css",
-    "static/js/main.7d30f43d.js"
+    "static/css/main.bd850ee3.css",
+    "static/js/main.2d7012e0.js"
   ]
 }
