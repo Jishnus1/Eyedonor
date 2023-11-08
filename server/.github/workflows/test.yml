@@ -1,0 +1,16 @@
+name: Eyedonor-server
+
+on:
+  push:
+    branches:
+      - server
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: test 
+        run: echo "setup server"
+     

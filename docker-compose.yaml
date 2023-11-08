@@ -1,0 +1,39 @@
+
+version: '3.8'
+
+services:
+  server:
+    build: ./Server
+    ports:
+      - "5000:5000"
+    networks:
+      - widgets
+
+  mainframe:
+    # hostname: localhost
+    build: ./Mainframe
+    ports:
+      - "3000:80"
+    networks:
+      - widgets
+
+  nginexs:
+    build: ./Nginx
+    restart: always
+    ports:
+      - "80:80"
+    links:
+      - mainframe
+      - server
+    networks:
+      - widgets
+networks:
+  widgets:
+    driver: bridge
+    ipam:
+     config:
+       - subnet: 172.10.0.0/16
+         gateway: 172.10.5.254
+         aux_addresses:
+          pos: 172.10.1.2
+          couchdb: 172.10.1.3
